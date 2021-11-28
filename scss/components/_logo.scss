@@ -3,15 +3,21 @@
   color: var(--accent);
   font-family: raleway, sans-serif;
   @include font(24px, 700, 28px);
-  // @include font(26px, 700, 31px);
+
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 700, 31px);
+  }
 }
 
 .header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
-  // margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 .footer__logo {
   padding-top: 0px;

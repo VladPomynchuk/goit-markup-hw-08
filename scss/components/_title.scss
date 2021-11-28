@@ -1,6 +1,11 @@
 .title {
   margin-bottom: 50px;
 
-  @include font(36px, 700, 42px);
+  @include font(28px, 700, 33px);
+
+  @media screen and (min-width: 1200px) {
+    @include font(36px, 700, 42px);
+  }
+
   text-align: center;
 }

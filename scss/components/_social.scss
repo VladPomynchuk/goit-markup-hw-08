@@ -15,6 +15,12 @@
   justify-content: center;
   width: 44px;
   height: 44px;
+
+  @media screen and (max-width: 200px) {
+    height: 100%;
+    width: 100%;
+  }
+
   border-radius: 50%;
   background-color: var(--primary-bg-color);
 
@@ -50,7 +56,14 @@
 }
 
 .footer__social {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer {

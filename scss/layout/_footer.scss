@@ -6,7 +6,15 @@
 }
 
 .footer-contacts {
-  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+    text-align: start;
+    margin-bottom: 0px;
+    width: 231px;
+  }
 }
 
 .maps__link {
@@ -48,6 +56,16 @@
   color: #ffffff;
 }
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-tablet-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
