@@ -94,8 +94,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section--padding {
@@ -169,7 +176,6 @@ img {
 }
 
 .footer__social {
-  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -186,7 +192,7 @@ img {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.18;
@@ -198,6 +204,7 @@ img {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -605,12 +612,24 @@ img {
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -621,6 +640,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .filter__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .filter__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 }
@@ -1032,6 +1057,10 @@ img {
   }
 }
 
+.peculiarities__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .peculiarities__item {
     width: calc((100% - 15px * 4) / 2);
@@ -1131,7 +1160,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .team__item {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1345,6 +1374,12 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     flex-grow: 1;
@@ -1400,11 +1435,21 @@ img {
   }
 }
 
+.footer-tablet-box {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer-tablet-box {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-tablet-box {
+    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
